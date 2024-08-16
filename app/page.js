@@ -3,23 +3,24 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import { isMobile } from 'react-device-detect';
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
+import Bienvenue from '@/components/bienvenue/bienvenue';
 
 export default function Home() {
-  const [contenueToShow, setContenueToShow] = useState(<></>);
+  const [contenue, setContenue] = useState(<></>);
   
   useEffect(() => {
     if(isMobile){
-      setContenueToShow(<p>Vous êtes actuellement sur MOBILE.</p>);
+      setContenue(<Bienvenue />);
     } else {
-      setContenueToShow(<p>Retourne sur ton téléphone !</p>);
+      setContenue(<p>Retourne sur mobile !</p>);
     }
   }, [isMobile])
   
   
   return (
     <main className={styles.main}>
-      {contenueToShow}
+      {contenue}
     </main>
   )
 }

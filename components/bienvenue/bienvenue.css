@@ -1,0 +1,33 @@
+.conteneurBienvenue {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    color: white;
+    font-family: "Roboto Mono";
+    font-size: 1vh;
+    text-align: center;
+    margin: 20vh 15px 0 15px;
+}
+
+.corps {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12vh;
+    padding: 0 5vh;
+}
+
+.corps p {
+    font-size: 15px;
+    text-align: left;
+}
+
+.corps button {
+    margin: 5vh;
+    padding: 1vh;
+    border-radius: 25px;
+}
