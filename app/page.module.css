@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  background-image: url('/images/background-accueil.webp');
+  background-size: cover;
+}
+
+.main p {
+  color: white;
+  font-size: 10em;
+  text-align: center;
+  font-family: "Roboto Mono";
+}
